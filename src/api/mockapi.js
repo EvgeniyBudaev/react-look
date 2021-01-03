@@ -87,7 +87,7 @@ const normalizedCategories = [
   },
   {
     id: 'cde28e4f-9a85-45a4-8509-cc2b60843775',
-    name: 'cde28e4f-9a85-45a4-8509-cc2b60843775',
+    name: 'Напольные зеркала',
     products: [
       '2149ef1c-990f-4940-91d6-aa26a0c0277e',
       '9918a242-1bf5-4a4c-b167-9dfb6c5910f8',

@@ -1,12 +1,13 @@
-import {normalizedCategories as defaultCategories} from '../../../api/mockapi'
+import {normalizedCategories} from '../../../api/mockapi'
+import { arrToMap } from '../utils'
 
 
-const categoriesReducer = (categories = defaultCategories, action) => {
+const categoriesReducer = (state = arrToMap(normalizedCategories), action) => {
     const {type} = action
 
     switch (type) {
         default:
-            return categories
+            return state
     }
 }
 

@@ -4,12 +4,13 @@ import styles from './basket.module.scss'
 import BasketCard from './basketCard/basketCard'
 import BasketBottom from "./basketBottom"
 import {orderProductsSelector, totalSelector} from "../../redux/selectors";
+import {createStructuredSelector} from "reselect";
 
 
 const Basket = (props) => {
     const {total, orderProducts} = props
-    console.log('total', total)
-    console.log('orderProducts', orderProducts)
+    //console.log('total', total)
+    //console.log('orderProducts', orderProducts)
 
     if (!total) {
         return (
@@ -40,13 +41,12 @@ const Basket = (props) => {
     )
 }
 
-export default connect((state) => {
-    //console.log('orderProductsSelector(state)', orderProductsSelector(state))
-    return {
-        total: totalSelector(state),
-        orderProducts: orderProductsSelector(state),
-    }
-})(Basket)
+const mapStateToProps = createStructuredSelector({
+    total: totalSelector,
+    orderProducts: orderProductsSelector,
+});
+
+export default connect(mapStateToProps)(Basket);
 
 
 

@@ -2,10 +2,12 @@ import React from 'react'
 import {connect} from "react-redux";
 import styles from './card.module.scss'
 import {increment} from '../../redux/actions/actions'
+import {productAmountSelector, productSelector} from "../../redux/selectors";
+import {createStructuredSelector} from "reselect";
 
 
 const Card = (props) => {
-  console.log('[card][props]', props)
+  //console.log('[card][props]', props)
   const {increment, amount} = props
   const {id, name, price, images} = props.product
   //console.log('[card.js] [props]', props)
@@ -49,10 +51,10 @@ const Card = (props) => {
   )
 }
 
-const mapStateToProps = (state, ownProps) => ({
-  amount: state.orderReducer[ownProps.id] || 0,
-  product: state.productsReducer[ownProps.id],
-})
+const mapStateToProps = createStructuredSelector({
+  amount: productAmountSelector,
+  product: productSelector,
+});
 
 const mapDispatchToProps = ({
   increment
