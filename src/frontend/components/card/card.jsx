@@ -5,6 +5,7 @@ import {increment} from '../../redux/actions/actions'
 
 
 const Card = (props) => {
+  console.log('[card][props]', props)
   const {increment, amount} = props
   const {id, name, price, images} = props.product
   //console.log('[card.js] [props]', props)
@@ -49,8 +50,8 @@ const Card = (props) => {
 }
 
 const mapStateToProps = (state, ownProps) => ({
-  // product: state.orderReducer[ownProps.product.id]
-  amount: state.orderReducer[ownProps.product.id] || 0,
+  amount: state.orderReducer[ownProps.id] || 0,
+  product: state.productsReducer[ownProps.id],
 })
 
 const mapDispatchToProps = ({

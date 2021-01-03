@@ -9,8 +9,8 @@ const Products = (props) => {
         <>
             <div>
                 {
-                    props.products.map(product => (
-                        <Card key={product.id} product={product} />
+                    props.products.map(id => (
+                        <Card key={id} id={id} />
                     ))
                 }
             </div>
