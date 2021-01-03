@@ -8,7 +8,8 @@ import {orderProductsSelector, totalSelector} from "../../redux/selectors";
 
 const Basket = (props) => {
     const {total, orderProducts} = props
-    console.log('total, orderProducts', total, orderProducts)
+    console.log('total', total)
+    console.log('orderProducts', orderProducts)
 
     if (!total) {
         return (
@@ -40,6 +41,7 @@ const Basket = (props) => {
 }
 
 export default connect((state) => {
+    //console.log('orderProductsSelector(state)', orderProductsSelector(state))
     return {
         total: totalSelector(state),
         orderProducts: orderProductsSelector(state),
