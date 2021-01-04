@@ -1,9 +1,12 @@
 import {createSelector} from 'reselect'
 import { getById } from './utils'
 
-const categoriesSelector = state => state.categoriesReducer
+const categoriesSelector = state => state.categoriesReducer.entities
 const orderSelector = state => state.orderReducer
 const productsSelector = state => state.productsReducer
+
+export const categoriesLoadingSelector = state => state.categoriesReducer.loading
+export const categoriesLoadedSelector = state => state.categoriesReducer.loaded
 
 export const orderProductsSelector = createSelector(
     productsSelector,

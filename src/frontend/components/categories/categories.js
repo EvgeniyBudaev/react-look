@@ -3,19 +3,20 @@ import {connect} from 'react-redux';
 import Navigation from "../navigation";
 import Category from "../category";
 import Tabs from "../tabs/tabs";
-import {categoriesListSelector} from '../../redux/selectors';
+import {categoriesListSelector, categoriesLoadedSelector, categoriesLoadingSelector} from '../../redux/selectors';
 import {loadCategories} from "../../redux/actions/actions";
 import Loader from "../loader";
 
 const Categories = (props) => {
 //console.log('[categories][props]', props)
-const {categories, loadCategories} = props
+const {categories, loadCategories, loading, loaded} = props
 
     useEffect(() => {
-        loadCategories()
+        if (!loading && !loaded) loadCategories()
     }, [])
 
-    if (categories.length === 0) return <Loader />
+    if (loading || !loaded) return <Loader />
+
     const tabs = categories.map((category) => ({
         title: category.name,
         content: <Category category={category} />,
@@ -24,8 +25,10 @@ const {categories, loadCategories} = props
     return <Tabs tabs={tabs} />
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, props) => ({
     categories: categoriesListSelector(state),
+    loading: categoriesLoadingSelector(state, props),
+    loaded: categoriesLoadedSelector(state, props)
 })
 
 export default connect(mapStateToProps, {loadCategories})(Categories)

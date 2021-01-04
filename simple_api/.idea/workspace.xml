@@ -20,17 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47dd027f-d6a2-489c-be79-c05db263995f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../src/frontend/components/loader/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/frontend/components/loader/loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/frontend/components/loader/loader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/frontend/redux/middleware/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/components/categories/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/categories/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/frontend/components/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/category/category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/frontend/redux/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/middleware/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/middleware/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/frontend/redux/reducers/categoriesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/reducers/categoriesReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/selectors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609745423874</updated>
       <workItem from="1609745425060" duration="552000" />
-      <workItem from="1609756535271" duration="558000" />
+      <workItem from="1609756535271" duration="1031000" />
     </task>
     <servers />
   </component>
