@@ -93,7 +93,7 @@ const normalizedCategories = [
       '9918a242-1bf5-4a4c-b167-9dfb6c5910f8',
     ]
   },
-]
+];
 
 
 
@@ -124,7 +124,7 @@ const normalizedProducts = [
     price: 35000,
     images: productFloor2,
   },
-]
+];
 
 const mirrors = magazine[0].mirrors[0]
 export {mirrors, normalizedCategories, normalizedProducts}
