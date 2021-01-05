@@ -20,18 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47dd027f-d6a2-489c-be79-c05db263995f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../src/frontend/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/frontend/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/mock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/components/card/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/card/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/components/categories/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/categories/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/components/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/category/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/components/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/products/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/reducers/productsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/reducers/productsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/frontend/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/frontend/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/frontend/components/basket/basketBottom/basketBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/frontend/components/basket/basketBottom/basketBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

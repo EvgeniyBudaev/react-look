@@ -1,6 +1,8 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import styles from './basketBottom.module.scss'
 import Button from '../../UI/button/button'
+import {CHECKOUT} from "../../../routes";
 
 const BasketBottom = (props) => {
     const {total} = props
@@ -20,7 +22,9 @@ const BasketBottom = (props) => {
                     </p>
                 </div>
 
+                <Link to={CHECKOUT}>
                     <Button text={'Оформить заказ'} />
+                </Link>
 
             </div>
         </div>

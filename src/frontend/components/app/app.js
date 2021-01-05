@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {Switch, Route} from 'react-router-dom'
 import Categories from "../categories";
+import {BASKET, CATEGORIES, CHECKOUT} from "../../routes";
+import Basket from "../basket";
 
 const App = () => {
     return (
         <div>
-            <Categories />
+            <Route path={CHECKOUT} component={Basket} />
+            <Route path={CATEGORIES} component={Categories} />
         </div>
     )
 }
