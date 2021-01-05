@@ -3,10 +3,15 @@ import { getById } from './utils'
 
 const categoriesSelector = state => state.categoriesReducer.entities
 const orderSelector = state => state.orderReducer
-const productsSelector = state => state.productsReducer
+const productsSelector = (state) => state.productsReducer.entities
 
 export const categoriesLoadingSelector = state => state.categoriesReducer.loading
 export const categoriesLoadedSelector = state => state.categoriesReducer.loaded
+
+export const productsLoadingSelector = (state, props) =>
+    state.productsReducer.loading[props.categoryId];
+export const productsLoadedSelector = (state, props) =>
+    state.productsReducer.loaded[props.categoryId];
 
 export const orderProductsSelector = createSelector(
     productsSelector,
@@ -36,6 +41,7 @@ export const categoriesListSelector = createSelector(
 
 export const productAmountSelector = getById(orderSelector, 0);
 export const productSelector = getById(productsSelector);
+
 
 
 

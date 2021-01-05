@@ -6,7 +6,7 @@ import generateId from './middleware/generateId'
 
 import rootReducer from './reducers/rootReducer'
 import history from '../../history'
-import api from "./middleware/api";
+import api from "./middleware/api"
 
 const enhancer = applyMiddleware(
     thunk,

@@ -1,5 +1,6 @@
 import React, {useState, useMemo, useEffect} from 'react';
 import {connect} from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 import Navigation from "../navigation";
 import Category from "../category";
 import Tabs from "../tabs/tabs";
@@ -25,11 +26,18 @@ const {categories, loadCategories, loading, loaded} = props
     return <Tabs tabs={tabs} />
 }
 
-const mapStateToProps = (state, props) => ({
-    categories: categoriesListSelector(state),
-    loading: categoriesLoadingSelector(state, props),
-    loaded: categoriesLoadedSelector(state, props)
-})
+export default connect(  createStructuredSelector({
+        categories: categoriesListSelector,
+        loading: categoriesLoadingSelector,
+        loaded: categoriesLoadedSelector,
+    }),
+    {loadCategories})(Categories)
 
-export default connect(mapStateToProps, {loadCategories})(Categories)
+// const mapStateToProps = (state, props) => ({
+//     categories: categoriesListSelector(state),
+//     loading: categoriesLoadingSelector(state, props),
+//     loaded: categoriesLoadedSelector(state, props)
+// })
+//
+// export default connect(mapStateToProps, {loadCategories})(Categories)
 
