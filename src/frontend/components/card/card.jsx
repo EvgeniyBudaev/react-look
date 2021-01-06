@@ -7,7 +7,7 @@ import {createStructuredSelector} from "reselect";
 
 
 const Card = (props) => {
-  console.log('[card][props]', props)
+  //console.log('[card][props]', props)
   const {product, increment, amount} = props
 
   if (!product) return null;

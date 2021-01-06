@@ -11,7 +11,7 @@ import styles from './basketCard.module.scss'
 const BasketCard = (props) => {
     const {product, amount, subtotal, increment, decrement, remove} = props
     const {id, images, name, price} = product
-    console.log('[basketCard][props]', props)
+    //console.log('[basketCard][props]', props)
 
     return (
         <div className={styles.basketCard}>
