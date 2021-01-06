@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div>
             <Route path={CHECKOUT} component={Basket} />
-            <Route path={CATEGORIES} component={Categories} />
+            <Route path={CATEGORIES + ":restId"} component={Categories} />
         </div>
     )
 }
