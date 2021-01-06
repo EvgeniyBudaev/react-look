@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
-import {BASKET, CATEGORIES, CHECKOUT} from "../../routes";
+import {CATEGORIES, CHECKOUT} from "../../routes";
 import Basket from "../basket";
 import {HOME} from "../../routes/routes";
 import CategoriesPage from "../../pages/categoriesPage";

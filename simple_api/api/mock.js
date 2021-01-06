@@ -17,6 +17,7 @@ const normalizedCategories = [
 	},
 ];
 
+
 const normalizedProducts = [
 	{
 		id: '87ef588c-c539-45f8-b3bd-bc3b6f63cd20',
