@@ -1,10 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
-import Navigation from "../navigation";
 import Category from "../category";
-import Tabs from "../tabs/tabs";
 import {categoriesListSelector} from '../../redux/selectors';
 import styles from "./categories.module.css";
 import {CATEGORIES} from "../../routes";
