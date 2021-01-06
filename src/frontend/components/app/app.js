@@ -1,14 +1,19 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
-import Categories from "../categories";
 import {BASKET, CATEGORIES, CHECKOUT} from "../../routes";
 import Basket from "../basket";
+import {HOME} from "../../routes/routes";
+import CategoriesPage from "../../pages/categoriesPage";
 
 const App = () => {
     return (
         <div>
-            <Route path={CHECKOUT} component={Basket} />
-            <Route path={CATEGORIES + ":restId"} component={Categories} />
+            <Switch>
+                <Route path={HOME} component={() => '<h1>Домашняя страница</h1>'} exact />
+                <Route path={CHECKOUT} component={Basket} />
+                <Route path={CATEGORIES} component={CategoriesPage} />
+                <Route path={HOME} component={() => '<h1>404 - такой страницы не существует</h1>'} />
+            </Switch>
         </div>
     )
 }

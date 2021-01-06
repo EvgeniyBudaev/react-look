@@ -5,22 +5,14 @@ import { createStructuredSelector } from 'reselect';
 import Navigation from "../navigation";
 import Category from "../category";
 import Tabs from "../tabs/tabs";
-import {categoriesListSelector, categoriesLoadedSelector, categoriesLoadingSelector} from '../../redux/selectors';
-import {loadCategories} from "../../redux/actions/actions";
-import Loader from "../loader";
+import {categoriesListSelector} from '../../redux/selectors';
 import styles from "./categories.module.css";
 import {CATEGORIES} from "../../routes";
 
 
 const Categories = (props) => {
 //console.log('[categories][props]', props)
-    const {categories, loadCategories, loading, loaded, match} = props
-
-    useEffect(() => {
-        if (!loading && !loaded) loadCategories()
-    }, [])
-
-    if (loading || !loaded) return <Loader />
+    const {categories, match} = props
 
     const {restId} = match.params
 
@@ -49,10 +41,7 @@ const Categories = (props) => {
 
 export default connect(  createStructuredSelector({
         categories: categoriesListSelector,
-        loading: categoriesLoadingSelector,
-        loaded: categoriesLoadedSelector,
-    }),
-    {loadCategories})(Categories)
+    }))(Categories)
 
 // const mapStateToProps = (state, props) => ({
 //     categories: categoriesListSelector(state),
