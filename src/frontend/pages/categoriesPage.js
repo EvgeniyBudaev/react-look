@@ -13,7 +13,7 @@ const CategoriesPage = (props) => {
 
     useEffect(() => {
         if (!loading && !loaded) loadCategories()
-    }, [])
+    }, [loadCategories, loading, loaded])
 
     if (loading || !loaded) return <Loader />
 
